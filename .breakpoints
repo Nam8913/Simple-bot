@@ -1,0 +1,20 @@
+{
+  "files": {
+    "Handle/Commands.js": [
+      {
+        "id": "b2ac7922-5132-4193-a704-f8823b9365c2",
+        "line": 72,
+        "version": 190,
+        "index": 2186
+      }
+    ],
+    "Module/Event/Interaction/interactionCreate.js": [
+      {
+        "id": "aad28b37-974a-4004-8459-395a44dff36b",
+        "line": 22,
+        "version": 1,
+        "index": 721
+      }
+    ]
+  }
+}
