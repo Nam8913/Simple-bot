@@ -1,7 +1,11 @@
-/**
- * 
- * 
+ 
 const express = require("express")
+
+const request = require('request');
+const cherio = require('cherio');
+const fs = require('fs');
+
+
 const server = express()
 
 server.all("/", (req, res) => {
@@ -14,5 +18,11 @@ function Server() {
   })
 }
 
+var WriteStream  = fs.createWriteStream("vi.lang", "UTF-8");
+WriteStream.write("\n");
+
+
+
+
 module.exports = Server
- */
+ 

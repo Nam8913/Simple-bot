@@ -1,6 +1,8 @@
 const moongoose = require('mongoose');
 const Database = process.env['Database']
 
+ 
+
 module.exports ={
     name: 'ready',
     once: true,
@@ -8,6 +10,8 @@ module.exports ={
       console.log(` ${client.user.tag} is working!`);
       client.user.setActivity(" with BOT SIMPLE ", {type: "PLAYING"});
       
+  
+
       if(!Database) return;
         moongoose.connect(Database,{
             useNewUrlParser: true,
@@ -20,3 +24,4 @@ module.exports ={
         });
     }
 }
+ 

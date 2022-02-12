@@ -1,10 +1,14 @@
-const {CommandInteraction} = require('discord.js');
+const {CommandInteraction , MessageEmbed} = require('discord.js');
 
-module.exports ={
-  name:'Ping',
-  description:"Pong!",
-  permission: "ADMINISTRATOR",
-  execute(interaction){
-    interaction.reply({content:"Pong!"})
-  }
+module.exports = {
+    name: 'ping',
+    description: 'Pong!',
+    permission: "ADMINISTRATOR",
+    execute(interaction, client){
+        interaction.reply({embeds: [
+            new MessageEmbed()
+            .setColor("GREEN")
+            .setDescription(`🏓 Pong!`)
+        ]});
+    }
 }
